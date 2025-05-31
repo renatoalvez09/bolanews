@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: rgb(11, 11, 11);
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+}
+
+.logo{
+    flex:20%;
+    margin-left:10%;
+     /* border:1px solid red;  */
+    text-align: left;
+}
+
+.logo h1{
+    color:#899b22;
+    font-size:34px;
+}
+
+.menu{
+    flex:70%;
+   /* border:1px solid green;*/
+    text-align:right;
+    padding:20px;
+}
+
+.menu a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size:20px;
+    padding:20px 16px; 
+}
+
+.menu a:hover{
+    color:#48bd11;
+    border-top:4px solid #0d0d0e;
+}
+
+#botao{
+    background: #b19d1c;
+    padding: 10px 25px;
+    color:white;
+    border-radius:5px;
+    margin-right:10%;
+    margin-left:5%;
+}
+
+#botao:hover{
+    border:none;
+    background: #48bd11;
+}
+
+.header{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top:100px;
+}
+
+.headline{
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.noticia {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.noticia img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.noticia h2 {
+  font-size: 18px;
+  color: #222;
+}
+
+.noticia p {
+  font-size: 14px;
+  color: #555;
+}
+
+.noticia a {
+  color: blue;
+  text-decoration: none;
+}
+
+footer{
+    margin-top:100px;
+    height: 400px;
+    background-image:linear-gradient(180deg,black);
+    text-align:center;
+    border-top:5px solid #FF2978;
+}
+
+.logo-rodape{
+    padding:100px;
+}
+
+.agencia{
+    font-family: 'Lobster', cursive;
+    color:white;
+    font-size:34px;
+}
