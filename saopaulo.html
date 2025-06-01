@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOLA NEWS</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsivo.css" />
+</head>
+<body>
+  <nav class="navbar">
+        <div class="logo">
+            <h1>São Paulo</h1>
+        </div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="jogos.html">Jogos</a>
+            <a href="times.html">Times</a>
+            <a id="botao" href="fale.html">Fale Conosco</a>
+        </div>
+    </nav>
+  <header class="header">  
+
+    <div id="noticias"></div>
+  
+ <script>
+    const apiKey = "fa4fe0c304e2c72d0ffc5094e7f9ffaa"; // Substitua pela sua chave
+    const query = "São Paulo fc";
+    const url = `https://gnews.io/api/v4/search?q=${query}&lang=pt&country=br&max=10&token=${apiKey}`;
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("noticias");
+        
+        if (data.articles) {
+          data.articles.forEach(noticia => {
+            const div = document.createElement("div");
+            div.className = "noticia";
+            div.innerHTML = `
+              <img src="${noticia.image || 'https://via.placeholder.com/600x300'}" alt="">
+              <h3>${noticia.title}</h3>
+              <p>${noticia.description || ''}</p>
+              <a href="${noticia.url}" target="_blank">Leia mais</a>
+            `;
+            container.appendChild(div);
+          });
+        } else {
+          container.innerHTML = "<p>Limite de notícias atingido. Tente novamente amanhã.</p>";
+        }
+      })
+      .catch(err => {
+        document.getElementById("noticias").innerHTML = "<p>Erro ao carregar notícias.</p>";
+        console.error(err);
+      });
+  </script>
+  
+  </header>
+  <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">BOLA NEWS</h1>
+            <p style="color:white">A melhor página de notícias do futebol, onde a bola nunca para de rolar!</p>
+            <a id href="fale.html">Fale Conosco</a>
+            <a href="index.html">Início</a>
+            <a href="jogos.html">Jogos</a>
+            <a href="times.html">Times</a>
+        </div>
+        <b style="color:white;">© Todos os direitos reservados.</b>
+    </footer>
+
+
+</body>
+</html>
+
