@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bola News</title>
+  <title>FuteNews</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsivo.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png.png">
 </head>
 <body>
   <nav class="navbar">
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <div class="navbar-title">Bola News</div>
+  <div class="navbar-title">FuteNews</div>
   <ul id="menu" class="menu">
     <li><a href="index.html">Início</a></li>
     <li><a href="times.html">Times</a></li>
@@ -41,7 +42,7 @@
   </header>
   <footer>
         <div class="logo-rodape">
-            <h1 class="agencia">Bola News</h1>
+            <h1 class="agencia">FuteNews</h1>
             <p style="color:white">A melhor página de notícias do futebol, onde a bola nunca para de rolar!</p>
             <a id href="fale.html">Fale Conosco</a>
             <a href="index.html">Início</a>
@@ -50,5 +51,12 @@
         </div>
         <b style="color:white;">© Todos os direitos reservados.</b>
     </footer>
+
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
 </body>
 </html>
