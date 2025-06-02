@@ -53,7 +53,7 @@
         document.getElementById("noticias").innerHTML = "<p>Erro ao carregar notícias.</p>";
         console.error(err);
       });
-  </script>
+  </script>  
   
   </header>
   <footer>
@@ -68,7 +68,12 @@
         <b style="color:white;">© Todos os direitos reservados.</b>
     </footer>
 
-
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
 </body>
 </html>
 
