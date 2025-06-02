@@ -148,6 +148,13 @@
   Este site usa cookies para melhorar sua experiência. <button onclick="aceitarCookies()">OK</button>
 </div>
 
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+
 <script>
   if (!localStorage.getItem('aceitouCookies')) {
     document.getElementById('cookie-banner').style.display = 'block';
