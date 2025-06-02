@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BOLA NEWS</title>
+  <title>Bola News</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsivo.css" />
 </head>
 <body>
   <nav class="navbar">
-        <div class="logo">
-            <h1>Palmeiras</h1>
-        </div>
-        <div class="menu">
-            <a href="index.html">Início</a>
-            <a href="jogos.html">Jogos</a>
-            <a href="times.html">Times</a>
-            <a id="botao" href="fale.html">Fale Conosco</a>
-        </div>
-    </nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="navbar-title">Bola News</div>
+  <ul id="menu" class="menu">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="times.html">Times</a></li>
+    <li><a href="jogos.html">Jogos</a></li>
+    <li><a href="fale.html">Fale Conosco</a></li>
+  </ul>
+</nav>
   <header class="header">  
 
     <div id="noticias"></div>
