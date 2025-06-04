@@ -160,9 +160,9 @@ section{
 
 
 footer{
-    margin-top:100px;
-    height: 400px;
-    background-image:linear-gradient(180deg,black);
+    background-color: #111;
+    margin: top 100px;
+    height: 500px;
     text-align:center;
 }
 
