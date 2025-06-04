@@ -21,40 +21,74 @@
     <li><a href="sobre.html">Sobre Nós</a></li>
   </ul>
 </nav>
-  <header class="header">
-  <section style="padding: 20px;">
-  <h2 style="text-align: center; color: #333;">Notícias Exclusivas</h2>
+  <header class="heade">
+ <style>
+    heade {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
-  <article style="background: #f9f9f9; padding: 15px; margin-top: 15px; border-radius: 8px;">
-    <h3 style="color: #007bff;">Jeffinho sofre lesão no joelho e está fora da Copa do Mundo de Clubes; Bastos será o substituto e viaja aos EUA com o Botafogo.</h3>
-    <p style="color: #555;">
-      Botafogo confirma novo desfalque para o Mundial de Clubes: Jeffinho está fora, e Bastos viaja para treinar com o elenco
-    </p>
-    <a href="noticia1.html" style="color: #007bff; text-decoration: underline;">Leia mais</a>
-  </article>
+    h1 {
+      text-align: center;
+    }
 
-  <article style="background: #f9f9f9; padding: 15px; margin-top: 15px; border-radius: 8px;">
-    <h3 style="color: #007bff;">Ancelotti inicia trabalhos na Seleção Brasileira com grupo ainda desfalcado</h3>
-    <p style="color: #555;">
-      Carlo Ancelotti comanda primeiro treino pela Seleção com elenco incompleto
-    </p>
-    <a href="noticia2.html" style="color: #007bff; text-decoration: underline;">Leia mais</a>
-  </article>
-</section>
-  </header>
-  <footer>
+    .jogo {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .time {
+      text-align: center;
+    }
+
+    .versus {
+      font-weight: bold;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jogos de Hoje - 04/06/2025</h1>
+
+  <div class="jogo">
+    <div class="time">
+      <img src="img/botafogo-logo-0.png" alt="Botafogo" class="logo"><br>
+      Botafogo
+    </div>
+    <div class="versus">20h</div>
+    <div class="time">
+      <img src="img/Ceará_Sporting_Club_logo.svg.png" alt="Ceará" class="logo"><br>
+      Ceará
+    </div>
+  </div>
+<footer>
         <div class="logo-rodape">
             <h1 class="agencia">FuteNews</h1>
             <p style="color:white">A melhor página de notícias do futebol, onde a bola nunca para de rolar!</p>
             <a id href="fale.html">Fale Conosco</a>
             <a href="index.html">Início</a>
-            <a href="jogos.html">Notícias</a>
+            <a href="jogos.html">Jogos</a>
             <a href="times.html">Times</a>
+            <a href="politica.html">Política de Privacidade</a>
+            <a href="sobre.html">Sobre Nós</a>
         </div>
         <b style="color:white;">© Todos os direitos reservados.</b>
     </footer>
-
-  <script>
+    <script>
   function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
