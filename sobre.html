@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsivo.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png.png">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="navbar-title">FuteNews</div>
+  <ul id="menu" class="menu">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="times.html">Times</a></li>
+    <li><a href="jogos.html">Jogos</a></li>
+    <li><a href="fale.html">Fale Conosco</a></li>
+    <li><a href="politica.html">Política</a></li>
+    <li><a href="sobre.html">Sobre Nós</a></li>
+  </ul>
+</nav>
+  <header class="header">  
+  <div class="headline">
+  <h1>Sobre Nós</h1>
+  <p>O FuteNews.pro é um portal independente dedicado a reunir as principais notícias do mundo do futebol.</p>
+  <p>Nossa missão é manter você atualizado sobre times, jogadores, campeonatos e tudo o que movimenta o esporte mais amado do planeta.</p>
+  <p>Somos apaixonados por futebol e buscamos oferecer conteúdo organizado e relevante para os fãs do esporte.</p>
+  </div>
+  </header>
+  <footer>
+        <div class="logo-rodape">
+            <h1 class="agencia">FuteNews</h1>
+            <p style="color:white">A melhor página de notícias do futebol, onde a bola nunca para de rolar!</p>
+            <a id href="fale.html">Fale Conosco</a>
+            <a href="index.html">Início</a>
+            <a href="jogos.html">Notícias</a>
+            <a href="times.html">Times</a>
+            <a href="politica.html">Política de Privacidade</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </div>
+        <b style="color:white;">© Todos os direitos reservados.</b>
+    </footer>
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+</body>
+</html>
+
+
