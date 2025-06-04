@@ -166,6 +166,16 @@ footer{
     text-align:center;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+footer a:hover {
+    text-decoration: underline; /* Se quiser efeito ao passar o mouse */
+  }  
+
 .logo-rodape{
     padding:100px;
 }
